@@ -314,13 +314,12 @@ form input:last-child {
     cursor: pointer;
 }
 
-.text-xs-center {
+.text {
     text-align: center;
-}
-
-.g-recaptcha {
     display: inline-block;
 }
+
+
 
 footer hr {
     border: 2px solid #707070;
