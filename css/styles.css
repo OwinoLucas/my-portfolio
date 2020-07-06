@@ -316,7 +316,7 @@ form input:last-child {
 
 .text {
     text-align: center;
-    display: inline-block;
+    margin-left: 100px;
 }
 
 
