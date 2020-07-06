@@ -124,16 +124,15 @@
 
     <div class="container contact" id="contact">
         <h1>Contact</h1>
+        <div class="text">
+            <div data-netlify-recaptcha="true"></div>
+        </div>
         <form action="POST" data-netlify="true">
-            <div class="container text-center">
-                <input type="text" name="name" col="30" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <textarea name="message" cols="60" rows="10" placeholder="Message"></textarea>
-                <div class="text">
-                    <div data-netlify-recaptcha="true"></div>
-                </div>
-                <input type="submit" value="Send" class="button">
-            </div>
+            <input type="text" name="name" col="30" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <textarea name="message" cols="60" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="Send" class="button">
+
         </form>
     </div>
 
