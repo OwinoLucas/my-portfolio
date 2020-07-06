@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container navbar">
+        <header>
+            <div class="one">
+                <h1>Lucas Otieno</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a> </li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container main-info-section">
+        <div class="text">
+            <h1>
+                <span>H</span>
+                <span class="m-left">i</span>
+                <span class="m-left">,</span>
+                <br>
+                <span>I</span>
+                <span class="m-left">'</span>
+                <span class="m-left">m</span>
+                <span class="name">L</span>
+                <span class="m-left name">u</span>
+                <span class="m-left name">c</span>
+                <span class="m-left name">a</span>
+                <span class="m-left name">s</span>
+                <span class="m-left">,</span>
+                <br>
+                <span>F</span>
+                <span class="m-left">u</span>
+                <span class="m-left">l</span>
+                <span class="m-left">l</span>
+                <span class="m-left">S</span>
+                <span class="m-left">t</span>
+                <span class="m-left">a</span>
+                <span class="m-left">c</span>
+                <span class="m-left">k</span>
+                <span>D</span>
+                <span class="m-left">e</span>
+                <span class="m-left">v</span>
+                <span class="m-left">e</span>
+                <span class="m-left">l</span>
+                <span class="m-left">o</span>
+                <span class="m-left">p</span>
+                <span class="m-left">e</span>
+                <span class="m-left">r</span>
+            </h1>
+            <p>JavaScript / Python / Typescript / Angular / Flask / Django</p>
+            <a href="#contact">Conatact Me</a>
+            <a href="https://github.com/OwinoLucas">My Github</a>
+        </div>
+        <div class="profile-image">
+            <img src="images/img.jpg" alt="profile image">
+        </div>
+    </div>
+    <div class="container about" id="about">
+        <h1>About</h1>
+        <div class="about-me-info">
+            <p>I am a competent and assertive fullstack developer, looking for a job in my field of study i.e Software
+                delopment. I completed university in 2019 and have recently completed my certificate in software
+                development at Moringa. My work is evident in my github account that show cases the level of knowledge i
+                have in the languages and frameworks that i have worked with.</p>
+            <p>I am a team player and i've also led a team as the scrum master to a successful project complition twice
+                in my time
+                in Moringa school that gave me an insight on how to work with other members in a team, other than that i
+                am also comfortable working without supervision and i adhere strictly to deadlines.</p>
+            <p>Moreover, i really enjoy coding and i'm a sponge in the presence on superior interlect, i follow through
+                with my commitments and i'm always inquisitive and ready to accept correction and work on it/them.</p>
+        </div>
+        <img src="images/dotted-shape.png" alt="">
+    </div>
+    <div class="container skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-info">
+            <p>In my time at Jomo Kenyatta university, I was fortunate to learn Java which is the language that got
+                me interested in programming, after i completed my studies there and moved on to Moringa, I got
+                introduced
+                to JavaScript and JQuery that was really interesting and i was able to complete a couple of projects
+                that are available in my github account.</p><br>
+            <p>As i continued with my studies there i got introduced to Python language which is currently my got to
+                language. In other words i'm more familiar with Python than any other language i've interacted with. I
+                used it to work with frameworks such as Flask and Django and developed projects such as Instagram and
+                awwwards clone and personal blogs.</p><br>
+            <p>I was also fortunate enough to interact with TypeScript, a superscript of JavaScript which was also
+                interesting as it allowed me to learn and use front-end frameworks such as Angular.</p>
+        </div>
+    </div>
+    <div class="container work" id="work">
+        <h1>Work</h1>
+        <div class="work-category">
+            <button id="js" class="active" onclick="showRequiredCategory(this)">Java Script</button>
+            <button id="angular" onclick="showRequiredCategory(this)">Angular</button>
+            <button id="django" onclick="showRequiredCategory(this)">Django</button>
+        </div>
+        <div class="category-js showCategory">
+            <a href=""><img src="images/img2.png"></a>
+            <a href=""><img src="images/img3.png"></a>
+        </div>
+        <div class="category-angular hideCategory">
+            <a href=""><img src="images/img4.png"></a>
+            <a href=""><img src="images/img5.png"></a>
+        </div>
+        <div class="category-django hideCategory">
+            <a href=""><img src="images/img6.png"></a>
+            <a href=""><img src="images/img7.png"></a>
+            <a href=""><img src="images/img8.png"></a>
+        </div>
+    </div>
+
+    <div class="container contact" id="contact">
+        <h1>Contact</h1>
+        <form action="POST" data-netlify="true">
+            <input type="text" name="name" col="30" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <textarea name="message" cols="60" rows="10" placeholder="Message"></textarea>
+            <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+            <input type="submit" value="Send" class="button bg-info"">
+        </form>
+    </div>
+
+    <footer>
+        <hr>
+        <p>2020 Copyright. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src=" js/animation.gsap.min.js"> </script> <script src="js/TweenMax.min.js"></script>
+            <script src="js/CSSPlugin.min.js"></script>
+            <script src="js/script.js"></script>
+</body>
+
+</html>
